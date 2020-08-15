@@ -25,8 +25,9 @@ a{
     font-size: 1.6rem;
 }
 
-p li{
+p, li{
     font-size: 1.6rem;
+    margin-top:0.5em ;
     margin-bottom: 0.5em;
     letter-spacing: 0.15em;
 }
@@ -48,15 +49,35 @@ h1 h2, h3{
     font-weight: 600;
 }
 .md-heading{
-    font-size: 2.4rem;
+    font-size: 2rem;
+}
+.text-white{
+    color: white;
 }
 
+.text-pink{
+    color:#d88593;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-primary{
+    background-color: white;
+    border-radius:100px;
+}
 
 
 
 
 /* ####################Header styling############################## */
 .header{
+    position: relative;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url("../img/header-image.jpg");
     background-position: center;
@@ -97,4 +118,62 @@ h1 h2, h3{
     content:'';
     display:block;
     clear:both;
+}
+
+/* ################### header content styling ######################### */
+
+.header-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom:1em ;
+}
+.header-content p{
+    text-transform: uppercase;
+    margin-bottom:1.5em ;
+}
+
+/* ################### Showcase section styling ########################## */
+
+.showcase{
+    background:#ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 350px;
+    border:2px solid red;
+}
+
+.row1{
+    margin-bottom:10rem;
+}
+.row1 .img-box, .row2 .text-box{
+    float:left;
+    width:50%;
+}
+.row2 .img-box, .row1 .text-box{
+    float:right;
+    width:50%;
+}
+
+.row .img-box{
+    border:5px solid green;
+    height: 100%;
+}
+.row .text-box{
+    border:5px solid purple;
+    padding: 3rem;
+}
+
+.row .img-box img{
+    display:inline-block;
+    width:100%;
+    height: 100%;
 }
